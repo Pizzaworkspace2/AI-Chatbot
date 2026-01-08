@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <input type="text" placeholder="Answer" id="answer>
+    <input type="text" placeholder="Answer" id="answer">
      <div id="chat">
       <p id="text"></p>
     </div>
@@ -26,6 +26,7 @@
 let inputdata = "";
 
 const answer = document.getElementById("text");
+const input = document.getElementById("answer");
 
 login.addEventListener("input", function(event) {
   inputdata = event.target.value;
