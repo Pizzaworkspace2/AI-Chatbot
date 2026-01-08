@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div id="chat">
+    <input type="text" placeholder="Answer" id="answer>
+     <div id="chat">
       <p id="text"></p>
     </div>
     <style>
@@ -18,5 +19,24 @@
         height: 100px;
         width: 200px;
     </style>
+  <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+// question 
+let inputdata = "";
+
+const answer = document.getElementById("text");
+
+login.addEventListener("input", function(event) {
+  inputdata = event.target.value;
+
+  if(inputdata === "I'm cooked") {
+answer.textContent = "Ok, skill issue ig";
+} else if(inputdata === "I'm happy") {
+  answer.textContent = "What did you do to day that made you happy?";
+  }
+
+ });
+});
+    </script>
   </body>
 </html>
